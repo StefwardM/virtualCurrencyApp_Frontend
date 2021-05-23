@@ -3,31 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-  <link rel="stylesheet" href="css/main.css">
+    <link href="sass/main.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="app">
-  <img alt="PepeCoin" class="pepeCoinImg" src="images/PepeCoin.png">
-  <h2 class="title">PepeCoin App</h2>
-  <div class="transfers">
-    <div class="transfer__new">
-      <input type="text" class="input--text todo__input" placeholder="What needs to be done">
-    </div>
-
-    <div class="transfer">
-      <input type="checkbox" class="transfer__state">
-      <div class="transfer__text">My first transfer</div>
-      <a class="transfer__delete" href="#">delete</a>
-    </div>
-
-    <div class="transfer transfer--completed">
-      <input type="checkbox" class="transfer__state">
-      <div class="transfer__text">My first transfer</div>
-      <a class="transfer__delete" href="#">delete</a>
-    </div>
-  </div>
-
-
+//show current balance
+<div>
+    <p>Your Balance</p>
+    <p>50 PP</p>
 </div>
 <script src="js/app.js"></script>
 </body>
