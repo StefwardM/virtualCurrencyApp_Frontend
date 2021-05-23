@@ -1,13 +1,23 @@
-body {
-  background: #f8f8ff;
+html {
+  width: 100%;
 }
 
-a, p {
+body {
+  background: #f8f8ff;
+  width: 100%;
+  font-size: 1.25em;
+  padding: 1em;
+  justify-content: center;
+}
+
+a, p, label, input {
   font-family: "Roboto", sans-serif;
+  color: #2E343D;
 }
 
 h1, h2, h3, h4, h5 {
   font-family: "Montserrat", sans-serif;
+  color: #2E343D;
 }
 
 .flex {
@@ -202,6 +212,47 @@ h1, h2, h3, h4, h5 {
 
 .font-bold {
   font-weight: 700;
+}
+
+.mobile {
+  background: #f8f8ff;
+  width: 414px;
+  box-shadow: 0px 0px 1em #ccc;
+  font-size: 1.25em;
+  padding: 1em;
+  border-radius: 1em;
+  margin: auto;
+  border: 21px solid #f8f8ff;
+}
+
+.error {
+  background-color: #B4C4E7;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  color: #32549d;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  display: none;
+}
+
+.btn {
+  font-size: 0.9em;
+  padding: 0.5em 1em;
+  margin-top: 0.8em;
+  font-weight: bold;
+  border-radius: 0.2em;
+  border: none;
+  color: white;
+  background-color: #0CB159;
+  cursor: pointer;
+}
+
+.inputfield {
+  border-radius: 2em;
+  height: 2.5rem;
+  vertical-align: middle;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
 }
 
 /*# sourceMappingURL=main.css.map */
