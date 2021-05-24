@@ -12,33 +12,37 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="app">
-    <h2 class="title">Create an account</h2>
-    <div class="alert hidden">
+<div class="mobile">
+    <h1 class="title">Create an account now!</h1>
+    <div class="error">
         Here is some feedback
     </div>
-    <div class="signup">
-        <div>
+    <div>
+        <div class="flex flex-col">
             <label for="email">Email</label>
-            <input class="input--text" id="email" name="email" type="text">
+            <input class="inputfield" id="email" name="email" type="text">
         </div>
 
-        <div>
+        <div class="flex flex-col">
             <label for="firstname">Firstname</label>
-            <input class="input--text" id="firstname" name="firstname" type="text">
+            <input class="inputfield" id="firstname" name="firstname" type="text">
         </div>
 
-        <div>
+        <div class="flex flex-col">
             <label for="lastname">Lastname</label>
-            <input class="input--text" id="lastname" name="lastname" type="text">
+            <input class="inputfield" id="lastname" name="lastname" type="text">
         </div>
 
-        <div>
+        <div class="flex flex-col">
             <label for="password">Password</label>
-            <input class="input--text" id="password" name="password" type="password">
+            <input class="inputfield" id="password" name="password" type="password">
         </div>
 
-        <button class="btn btn--primary">Let's go</button>
+        <div class="flex flex-row mt-4 justify-between">
+            <button class="btn w-1_3 self-center">Let's go</button>
+            <a class="link self-center" href="login.html">Already have an account?</a>
+        </div>
+
     </div>
 </div>
 <script src="js/signup.js"></script>
