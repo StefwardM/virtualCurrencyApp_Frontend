@@ -4,15 +4,25 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link href="sass/main.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
 </head>
 <body>
-//show current balance
-<div>
-    <p>Your Balance</p>
-    <p>50 PP</p>
+<div class="mobile">
+    <div class="flex flex-col text-center element element--circle mb-5">
+        <p class="uppercase p--medium">Your balance</p>
+        <p class="uppercase p--bold element--coins">50 PP</p>
+    </div>
+    <h3 class="text-center">Incoming transactions</h3>
+    <ul class="element">
+        <li class="flex flex-col transaction">
+            <p class="p--normal transaction__p">Transaction</p>
+            <p class="p--thin transaction__p">Just now</p>
+        </li>
+    </ul>
+
 </div>
 <script src="js/app.js"></script>
 </body>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="sass/main.css" rel="stylesheet">
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="mobile">
+    <h2>Who do you want to send PP to?</h2>
+    <div>
+        <div class="flex flex-col">
+            <label class="label" for="sendTo">To</label>
+            <input class="inputfield" id="sendTo" name="sendTo" type="text" placeholder="Type a name">
+        </div>
+
+        <div class="flex flex-col mb-1">
+            <label class="label" for="amount">Coins</label>
+            <input class="inputfield" id="amount" name="amount" type="text" placeholder="Type an amount of coins">
+        </div>
+
+        <div class="dropdown">
+            <button class="btn btn--primary btn--dropdown">Select your reason</button>
+            <div class="dropdown-content">
+                <a class="link link--dropdown" href="#">Reason 1</a>
+                <a class="link link--dropdown" href="#">Reason 2</a>
+                <a class="link link--dropdown" href="#">Reason 3</a>
+            </div>
+        </div>
+
+        <div class="flex flex-col mt-3">
+            <label class="label" for="Message">Message</label>
+            <textarea class="textarea" id="Message" name="Message" type="text" placeholder="Type a message"></textarea>
+        </div>
+
+        <div class="flex flex-row mt-4 justify-center gap-12">
+            <button class="btn btn--primary w-1_3 self-center">Confirm</button>
+            <button class="btn btn--primary btn--cancel w-1_3 self-center">Cancel</button>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
