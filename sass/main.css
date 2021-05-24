@@ -20,6 +20,10 @@ h1, h2, h3, h4, h5 {
   color: #2E343D;
 }
 
+input:focus-visible {
+  outline: none;
+}
+
 .flex {
   display: flex;
 }
@@ -34,6 +38,54 @@ h1, h2, h3, h4, h5 {
 
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+.self-auto {
+  align-self: auto;
+}
+
+.self-start {
+  align-self: flex-start;
+}
+
+.self-end {
+  align-self: flex-end;
+}
+
+.self-center {
+  align-self: center;
+}
+
+.self-stretch {
+  align-self: stretch;
+}
+
+.items-stretch {
+  align-items: stretch;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
 }
 
 .grid {
@@ -114,30 +166,6 @@ h1, h2, h3, h4, h5 {
 
 .gap-4 {
   gap: 1rem;
-}
-
-.justify-start {
-  justify-content: flex-start;
-}
-
-.justify-end {
-  justify-content: flex-end;
-}
-
-.justify-center {
-  justify-content: center;
-}
-
-.justify-between {
-  justify-content: space-between;
-}
-
-.justify-around {
-  justify-content: space-around;
-}
-
-.justify-evenly {
-  justify-content: space-evenly;
 }
 
 .text-left {
@@ -238,7 +266,6 @@ h1, h2, h3, h4, h5 {
 .btn {
   font-size: 0.9em;
   padding: 0.5em 1em;
-  margin-top: 0.8em;
   font-weight: bold;
   border-radius: 0.2em;
   border: none;
@@ -248,11 +275,171 @@ h1, h2, h3, h4, h5 {
 }
 
 .inputfield {
-  border-radius: 2em;
-  height: 2.5rem;
+  border-radius: 0.5em;
+  height: 2.3rem;
   vertical-align: middle;
   margin-top: 0.5em;
   margin-bottom: 1em;
+  border-color: transparent;
+  box-shadow: 0px 0px 1em #ccc;
+}
+
+.link {
+  text-decoration: none;
+  color: #6d6878;
+  font-size: large;
+}
+
+.w-1_2 {
+  width: 50%;
+}
+
+.w-1_3 {
+  width: 33.333333%;
+}
+
+.w-2_3 {
+  width: 66.666667%;
+}
+
+.w-1_4 {
+  width: 25%;
+}
+
+.w-2_4 {
+  width: 50%;
+}
+
+.w-3_4 {
+  width: 75%;
+}
+
+.w-1_5 {
+  width: 20%;
+}
+
+.w-2_5 {
+  width: 40%;
+}
+
+.w-3_5 {
+  width: 60%;
+}
+
+.w-4_5 {
+  width: 80%;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.m-px {
+  margin: 1px;
+}
+
+.m-0_5 {
+  margin: 0.125rem;
+}
+
+.m-1 {
+  margin: 0.25rem;
+}
+
+.m-1_5 {
+  margin: 0.375rem;
+}
+
+.m-2 {
+  margin: 0.5rem;
+}
+
+.m-2_5 {
+  margin: 0.625rem;
+}
+
+.m-3 {
+  margin: 0.75rem;
+}
+
+.m-3_5 {
+  margin: 0.875rem;
+}
+
+.m-4 {
+  margin: 1rem;
+}
+
+.m-5 {
+  margin: 1.25rem;
+}
+
+.m-6 {
+  margin: 1.5rem;
+}
+
+.m-7 {
+  margin: 1.75rem;
+}
+
+.m-8 {
+  margin: 2rem;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.mt-px {
+  margin-top: 1px;
+}
+
+.mt-0_5 {
+  margin-top: 0.125rem;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
+.mt-1_5 {
+  margin-top: 0.375rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.mt-2_5 {
+  margin-top: 0.625rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
+.mt-3_5 {
+  margin-top: 0.875rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
+.mt-7 {
+  margin-top: 1.75rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
 }
 
 /*# sourceMappingURL=main.css.map */
