@@ -1,4 +1,4 @@
-/*const btnSignup = */document.querySelector(".signup button").addEventListener("click", () => {
+/*const btnSignup = */document.querySelector(".mobile div button").addEventListener("click", () => {
     let username = document.querySelector('#email').value;
     let firstname = document.querySelector('#firstname').value;
     let lastname = document.querySelector('#lastname').value;
