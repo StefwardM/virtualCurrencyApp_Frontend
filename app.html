@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Balance</title>
     <link href="sass/main.css" rel="stylesheet">
     <link href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -12,8 +12,7 @@
 <body>
 <div class="mobile">
     <div class="flex flex-col text-center element element--circle mb-5">
-        <p class="uppercase p--medium">Your balance</p>
-        <p class="uppercase p--bold element--coins">50 PP</p>
+        <p class="uppercase p--medium balance">Your balance</p>
     </div>
     <h3 class="text-center">Incoming transactions</h3>
     <ul class="element">
@@ -22,8 +21,9 @@
             <p class="p--thin transaction__p">Just now</p>
         </li>
     </ul>
-
+    <button class="btn btn--primary btn--logout w-1_3 mt-8" id="logout">Log Out</button>
 </div>
 <script src="js/app.js"></script>
+<script src="js/logout.js"></script>
 </body>
 </html>

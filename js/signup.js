@@ -1,5 +1,6 @@
 /*const btnSignup = */document.querySelector(".mobile div button").addEventListener("click", () => {
-    let username = document.querySelector('#email').value;
+    let email = document.querySelector('#email').value;
+    let username = document.querySelector('#username').value;
     let firstname = document.querySelector('#firstname').value;
     let lastname = document.querySelector('#lastname').value;
     let password = document.querySelector('#password').value;
@@ -10,7 +11,8 @@
             'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-            "username":username,
+            "username": email,
+            "ppname":username,
             "firstname":firstname,
             "lastname":lastname,
             "password": password
@@ -19,9 +21,9 @@
         return response.json();
     }).then(json => {
         if(json.status === "success") {
-            let feedback = document.querySelector(".alert");
-            feedback.textContent = "Sign up complete!";
-            feedback.classList.remove('hidden');
+            // let feedback = document.querySelector(".alert");
+            // feedback.textContent = "Sign up complete!";
+            // feedback.classList.remove('hidden');
 
             let token = json.data.token;
             localStorage.setItem("token", token);

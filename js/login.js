@@ -15,9 +15,10 @@
         return response.json();
     }).then(json => {
         if(json.status === "success") {
-
             let token = json.data.token;
             localStorage.setItem("token", token);
+            let id = json.data.id
+            localStorage.setItem("id", id);
             window.location.href = "app.html";
         }
         else{
