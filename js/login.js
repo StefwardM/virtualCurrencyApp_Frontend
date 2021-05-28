@@ -20,7 +20,7 @@
             localStorage.setItem("token", token);
             let id = json.data.id
             localStorage.setItem("id", id);
-            window.location.href = "app.html";
+            window.location.href = "index.html";
         }
         else{
             let feedback = document.querySelector(".alert");

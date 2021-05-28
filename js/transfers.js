@@ -15,7 +15,7 @@ fetch('http://localhost:3000/api/v1/transfers', {
             let outgoing =
                 `<li class="flex flex-row justify-around transaction mb-4">
                 <p class="p--normal transaction__p transaction--outgoing">To ${json.data.transfers[i]['recipient']}</p>
-                <p class="p--normal transaction__p transaction--outgoing">${json.data.transfers[i]['amount']}</p>
+                <p class="p--normal transaction__p transaction--outgoing">${json.data.transfers[i]['amount']} PP</p>
                 </li>`
             document.querySelector("#transfers").insertAdjacentHTML('beforeend', outgoing);
         }
@@ -24,7 +24,7 @@ fetch('http://localhost:3000/api/v1/transfers', {
             let incoming =
                 `<li class="flex flex-row justify-around transaction mb-4">
                 <p class="p--normal transaction__p transaction--incoming">From ${json.data.transfers[i]['sender']}</p>
-                <p class="p--normal transaction__p transaction--incoming">${json.data.transfers[i]['amount']}</p>
+                <p class="p--normal transaction__p transaction--incoming">${json.data.transfers[i]['amount']} PP</p>
                 </li>`
             document.querySelector("#transfers").insertAdjacentHTML('beforeend', incoming);
         }

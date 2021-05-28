@@ -397,8 +397,8 @@ textarea {
 }
 
 .p--normal {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
   font-weight: 400;
 }
 
@@ -500,6 +500,12 @@ textarea {
 
 .link--dropdown:hover {
   background-color: #ddd;
+}
+
+.link--nav {
+  color: black;
+  font-size: large;
+  font-weight: bold;
 }
 
 .w-1_2 {
@@ -904,6 +910,10 @@ textarea {
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
+}
+
+.nav__icon {
+  width: 25px;
 }
 
 /*# sourceMappingURL=main.css.map */
