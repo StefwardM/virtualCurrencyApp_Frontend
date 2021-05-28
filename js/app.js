@@ -19,7 +19,7 @@ fetch(base_url + "/api/v1/transfers", {
     window.location.href = "login.html";
 })
 
-fetch('base_url + /users/' + localStorage.getItem('id'), {
+fetch(base_url + '/users/' + localStorage.getItem('id'), {
     method: "get",
     headers: {
         'Content-Type': 'application/json'
