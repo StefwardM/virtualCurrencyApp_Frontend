@@ -12,24 +12,19 @@
 <body>
 
 <h1>Welcome to Pepecoin!</h1>
-<div></div>
 <h2>Log in here!</h2>
-<div class="error">
-    Here is some feedback
+<div class="error hidden">
+    <p class="error__p"></p>
 </div>
-<div>
-    <div class="flex flex-col">
-        <label class="label" for="email">Email</label>
-        <input class="inputfield" id="email" name="email" type="text">
-    </div>
+<div class="form">
+    <label class="form__label" for="email">Email</label>
+    <input class="form__input" id="email" name="email" type="text">
 
-    <div class="flex flex-col">
-        <label class="label" for="password">Password</label>
-        <input class="inputfield" id="password" name="password" type="password">
-    </div>
+    <label class="form__label" for="password">Password</label>
+    <input class="form__input" id="password" name="password" type="password">
 
     <div class="flex flex-row mt-4 justify-between">
-        <button class="btn btn--primary w-1_3 self-center" id="loginBtn">Login</button>
+        <button class="btn btn--primary self-center" id="loginBtn">Login</button>
         <a class="link self-center" href="signup.html">Don't have an account yet?</a>
     </div>
 </div>
