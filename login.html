@@ -6,33 +6,34 @@
     <link href="sass/main.css" rel="stylesheet">
     <link href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
 </head>
 <body>
-<div class="mobile mobile--loginsign">
-    <h1>Welcome to Pepecoin!</h1>
-    <div></div>
-    <h2>Log in here!</h2>
-    <div class="error">
-        Here is some feedback
+
+<h1>Welcome to Pepecoin!</h1>
+<div></div>
+<h2>Log in here!</h2>
+<div class="error">
+    Here is some feedback
+</div>
+<div>
+    <div class="flex flex-col">
+        <label class="label" for="email">Email</label>
+        <input class="inputfield" id="email" name="email" type="text">
     </div>
-    <div>
-        <div class="flex flex-col">
-            <label class="label" for="email">Email</label>
-            <input class="inputfield" id="email" name="email" type="text">
-        </div>
 
-        <div class="flex flex-col">
-            <label class="label" for="password">Password</label>
-            <input class="inputfield" id="password" name="password" type="password">
-        </div>
+    <div class="flex flex-col">
+        <label class="label" for="password">Password</label>
+        <input class="inputfield" id="password" name="password" type="password">
+    </div>
 
-        <div class="flex flex-row mt-4 justify-between">
-            <button class="btn btn--primary w-1_3 self-center">Login</button>
-            <a class="link self-center" href="signup.html">Don't have an account yet?</a>
-        </div>
+    <div class="flex flex-row mt-4 justify-between">
+        <button class="btn btn--primary w-1_3 self-center" id="loginBtn">Login</button>
+        <a class="link self-center" href="signup.html">Don't have an account yet?</a>
     </div>
 </div>
+
 <script src="js/login.js"></script>
 </body>
 </html>
