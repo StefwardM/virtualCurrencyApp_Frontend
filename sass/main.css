@@ -746,6 +746,14 @@ textarea {
   margin-left: 1.5rem;
 }
 
+.transaction--outgoing {
+  color: #E53E3E;
+}
+
+.transaction--incoming {
+  color: #0CB159;
+}
+
 .dropdown {
   position: relative;
   display: inline-block;

@@ -1,20 +1,3 @@
-document.querySelector("#sendTo").addEventListener("keyup", () => {
-    let sendTo = document.querySelector('#sendTo').value;
-
-    fetch('http://localhost:3000/users/', {
-        method: "get",
-        headers: {
-            'Content-Type': 'application/json'
-        }
-    }).then(response => {
-        return response.json();
-    }).then(json => {
-        console.log(json);
-
-    }).catch(err => {
-        console.log(err);
-    })
-});
 
 document.querySelector("#confirmBtn").addEventListener("click", () => {
     let sendTo = document.querySelector('#sendTo').value;
@@ -29,7 +12,6 @@ document.querySelector("#confirmBtn").addEventListener("click", () => {
             'Authorization': 'Bearer ' + localStorage.getItem('token')
         },
         body: JSON.stringify({
-            "sender": localStorage.getItem("id"),
             "recipient": sendTo,
             "reason": reason,
             "message": message,
@@ -38,14 +20,10 @@ document.querySelector("#confirmBtn").addEventListener("click", () => {
     }).then(response => {
         return response.json();
     }).then(json => {
-        // if(json.status === "success") {
-        //     let feedback = document.querySelector(".alert");
-        //     feedback.textContent = "Transfer sent!";
-        //     feedback.classList.remove('hidden');
-        //
-        //     let token = json.data.token;
-        //     localStorage.setItem("token", token);
-        //     window.location.href = "login.html";
-        // }
+        console.log(json);
+        let transferId = json.data.transfer['_id'];
+        let amount = json.data.transfer
+        // window.location.href = "app.html";
     })
 });
+
