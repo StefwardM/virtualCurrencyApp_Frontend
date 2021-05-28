@@ -1,6 +1,8 @@
+const base_url = "https://pepecoin-gannufan.herokuapp.com";
+
 let usernames = [];
 let coins = [];
-fetch('http://localhost:3000/api/v1/leaderboard', {
+fetch(base_url + '/api/v1/leaderboard', {
     method: "get",
     headers: {
         'Content-Type': 'application/json'

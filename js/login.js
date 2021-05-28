@@ -1,8 +1,10 @@
+const base_url = "https://pepecoin-gannufan.herokuapp.com";
+
 /*const btnSignup = */document.querySelector(".mobile div button").addEventListener("click", () => {
     let username = document.querySelector('#email').value;
     let password = document.querySelector('#password').value;
 
-    fetch('http://localhost:3000/users/login', {
+    fetch(base_url + '/users/login', {
         method: "post",
         headers: {
             'Content-Type': 'application/json'
@@ -20,7 +22,7 @@
             localStorage.setItem("token", token);
             let id = json.data.id
             localStorage.setItem("id", id);
-            window.location.href = "app.html";
+            window.location.href = "index.html";
         }
         else{
             let feedback = document.querySelector(".alert");

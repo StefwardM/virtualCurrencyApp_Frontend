@@ -1,3 +1,4 @@
+const base_url = "https://pepecoin-gannufan.herokuapp.com";
 
 document.querySelector("#confirmBtn").addEventListener("click", () => {
     let sendTo = document.querySelector('#sendTo').value;
@@ -5,7 +6,7 @@ document.querySelector("#confirmBtn").addEventListener("click", () => {
     let reason = document.querySelector('#reason').value;
     let message = document.querySelector('#message').value;
 
-    fetch('http://localhost:3000/api/v1/transfers', {
+    fetch(base_url + '/api/v1/transfers', {
         method: "post",
         headers: {
             'Content-Type': 'application/json',
@@ -23,7 +24,7 @@ document.querySelector("#confirmBtn").addEventListener("click", () => {
         console.log(json);
         let transferId = json.data.transfer['_id'];
         let amount = json.data.transfer
-        fetch('http://localhost:3000/api/v1/transfers'+transferId, {
+        fetch(base_url + '/api/v1/transfers'+transferId, {
             method: "put",
             headers: {
                 'Content-Type': 'application/json',
@@ -43,7 +44,7 @@ document.querySelector("#confirmBtn").addEventListener("click", () => {
             let amount = json.data.transfer
 
         })
-        // window.location.href = "app.html";
+        // window.location.href = "index.html";
     })
 });
 
