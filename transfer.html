@@ -10,37 +10,38 @@
           rel="stylesheet">
 </head>
 <body>
-<div class="mobile">
-    <h2>Who do you want to send PP to?</h2>
-    <div>
-        <div class="flex flex-col">
-            <label class="label" for="sendTo">To</label>
-            <input class="inputfield" id="sendTo" name="sendTo" placeholder="Type a name" type="text">
-        </div>
 
-        <div class="flex flex-col mb-1">
-            <label class="label" for="amount">Coins</label>
-            <input class="inputfield" id="amount" name="amount" placeholder="Type an amount of coins" type="text">
-        </div>
-
-        <select id="reason">
-            <option class="link link--dropdown" value="Teamwork 👍">Teamwork 👍</option>
-            <option class="link link--dropdown" value="Helping out 🚀">Helping out 🚀</option>
-            <option class="link link--dropdown" value="Going the extra mile 🏎">Going the extra mile 🏎</option>
-        </select>
-
-        <div class="flex flex-col mt-3">
-            <label class="label" for="message">Message</label>
-            <textarea class="textarea" id="message" name="Message" placeholder="Type a message" type="text"></textarea>
-        </div>
-
-        <div class="flex flex-row mt-4 justify-center gap-12">
-            <button class="btn btn--primary w-1_3 self-center" id="confirmBtn">Confirm</button>
-            <button class="btn btn--primary btn--cancel w-1_3 self-center" id="cancelBtn">Cancel</button>
-        </div>
-
+<a class="link link--nav" href="index.html"> <img alt="go back arrow" class="nav__icon" src="images/Back.svg"></a>
+<h2 class="mt-6">Who do you want to send PP to?</h2>
+<div>
+    <div class="flex flex-col">
+        <label class="label" for="sendTo">To</label>
+        <input class="inputfield" id="sendTo" name="sendTo" placeholder="Type a name" type="text">
     </div>
-    <script src="js/transfer.js"></script>
+
+    <div class="flex flex-col mb-1">
+        <label class="label" for="amount">Coins</label>
+        <input class="inputfield" id="amount" name="amount" placeholder="Type an amount of coins" type="text">
+    </div>
+
+    <select id="reason">
+        <option class="link link--dropdown" value="Teamwork 👍">Teamwork 👍</option>
+        <option class="link link--dropdown" value="Helping out 🚀">Helping out 🚀</option>
+        <option class="link link--dropdown" value="Going the extra mile 🏎">Going the extra mile 🏎</option>
+    </select>
+
+    <div class="flex flex-col mt-3">
+        <label class="label" for="message">Message</label>
+        <textarea class="textarea" id="message" name="Message" placeholder="Type a message" type="text"></textarea>
+    </div>
+
+    <div class="flex flex-row mt-4 justify-center gap-12">
+        <button class="btn btn--primary w-1_3 self-center" id="confirmBtn">Confirm</button>
+        <button class="btn btn--primary btn--cancel w-1_3 self-center" id="cancelBtn">Cancel</button>
+    </div>
+
 </div>
+<script src="js/transfer.js"></script>
+
 </body>
 </html>
