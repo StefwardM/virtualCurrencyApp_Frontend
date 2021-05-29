@@ -1,4 +1,4 @@
-/*const btnSignup = */document.querySelector("#loginBtn").addEventListener("click", () => {
+document.querySelector("#loginBtn").addEventListener("click", () => {
     let username = document.querySelector('#email').value;
     let password = document.querySelector('#password').value;
 
@@ -14,7 +14,6 @@
     }).then(response => {
         return response.json();
     }).then(json => {
-        console.log(json);
         if(json.status === "success") {
             let token = json.data.token;
             localStorage.setItem("token", token);
@@ -23,10 +22,10 @@
             window.location.href = "index.html";
         }
         else{
-            let feedback = document.querySelector(".alert");
-            feedback.textContent = "Login failed compadre!";
-            feedback.classList.remove('hidden');
+            let errorDiv = document.querySelector(".error");
+            let errorText = document.querySelector(".error p");
+            errorText.innerHTML = json.message;
+            errorDiv.classList.remove('hidden');
         }
-
     })
 });

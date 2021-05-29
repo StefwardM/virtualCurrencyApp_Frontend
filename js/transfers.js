@@ -10,7 +10,7 @@ fetch('http://localhost:3000/api/v1/transfers', {
     console.log(json);
     let user = json.ppname;
 
-    for (let i = 0; i <= json.data.transfers.length - 1; i++){
+    for (let i = json.data.transfers.length - 1; i >= 0 ; i--){
         if(json.data.transfers[i]['sender'] === user) {
             let outgoing =
                 `<li class="flex flex-row justify-around transaction mb-4">
