@@ -1,13 +1,11 @@
-const base_url = "https://pepecoin-gannufan.herokuapp.com";
-
-/*const btnSignup = */document.querySelector(".mobile div button").addEventListener("click", () => {
+document.querySelector("#signUpBtn").addEventListener("click", () => {
     let email = document.querySelector('#email').value;
     let username = document.querySelector('#username').value;
     let firstname = document.querySelector('#firstname').value;
     let lastname = document.querySelector('#lastname').value;
     let password = document.querySelector('#password').value;
 
-    fetch(base_url + '/users/signup', {
+    fetch('http://localhost:3000/users/signup', {
         method: "post",
         headers: {
             'Content-Type': 'application/json'

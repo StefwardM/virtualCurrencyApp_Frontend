@@ -9,47 +9,39 @@
     <link href="sass/main.css" rel="stylesheet">
     <link href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
 </head>
 <body>
-<div class="mobile mobile--loginsign">
-    <h1 class="title">Create an account now!</h1>
-    <div class="error">
-        Here is some feedback
-    </div>
-    <div>
-        <div class="flex flex-col">
-            <label class="label" for="email">Email</label>
-            <input class="inputfield" id="email" name="email" type="text">
-        </div>
 
-        <div class="flex flex-col">
-            <label class="label" for="username">Username</label>
-            <input class="inputfield" id="username" name="username" type="text">
-        </div>
-
-        <div class="flex flex-col">
-            <label class="label" for="firstname">Firstname</label>
-            <input class="inputfield" id="firstname" name="firstname" type="text">
-        </div>
-
-        <div class="flex flex-col">
-            <label class="label" for="lastname">Lastname</label>
-            <input class="inputfield" id="lastname" name="lastname" type="text">
-        </div>
-
-        <div class="flex flex-col">
-            <label class="label" for="password">Password</label>
-            <input class="inputfield" id="password" name="password" type="password">
-        </div>
-
-        <div class="flex flex-row mt-4 justify-between">
-            <button class="btn btn--primary w-1_3 self-center">Sign up</button>
-            <a class="link self-center" href="login.html">Already have an account?</a>
-        </div>
-
-    </div>
+<h1 class="title">Create an account now!</h1>
+<div class="error">
+    Here is some feedback
 </div>
+<div class="form">
+
+    <label class="form__label" for="email">Email</label>
+    <input class="form__input" id="email" name="email" type="text">
+
+    <label class="form__label" for="username">Username</label>
+    <input class="form__input" id="username" name="username" type="text">
+
+    <label class="form__label" for="firstname">Firstname</label>
+    <input class="form__input" id="firstname" name="firstname" type="text">
+
+    <label class="form__label" for="lastname">Lastname</label>
+    <input class="form__input" id="lastname" name="lastname" type="text">
+
+    <label class="form__label" for="password">Password</label>
+    <input class="form__input" id="password" name="password" type="password">
+
+    <div class="flex flex-row mt-4 justify-between">
+        <button class="btn btn--primary" id="signUpBtn">Sign up</button>
+        <a class="link self-center" href="login.html">Already have an account?</a>
+    </div>
+
+</div>
+
 <script src="js/signup.js"></script>
 </body>
 </html>
