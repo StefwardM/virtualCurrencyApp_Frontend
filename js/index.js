@@ -1,4 +1,6 @@
-fetch("http://localhost:3000/api/v1/transfers", {
+const base_url = "https://pepecoin-gannufan.herokuapp.com";
+
+fetch(base_url + "/api/v1/transfers", {
     'headers': {
         'Authorization': 'Bearer ' + localStorage.getItem('token')
     }
@@ -31,7 +33,7 @@ fetch("http://localhost:3000/api/v1/transfers", {
     console.log(err);
 })
 
-fetch('http://localhost:3000/users/' + localStorage.getItem('id'), {
+fetch(base_url + '/users/' + localStorage.getItem('id'), {
     method: "get",
     headers: {
         'Content-Type': 'application/json'
