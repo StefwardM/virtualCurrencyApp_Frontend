@@ -9,7 +9,7 @@ fetch(base_url + "/api/v1/transfers", {
 }).then(json => {
     let user = json.ppname;
     let length = json.data.transfers.length - 1;
-    console.log(length);
+
     if (length <= 0) {
         let noTransaction =
             `<li class="flex flex-col transaction mb-2">
