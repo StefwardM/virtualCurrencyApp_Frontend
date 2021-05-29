@@ -1,11 +1,11 @@
-
+const base_url = "https://pepecoin-gannufan.herokuapp.com";
 document.querySelector("#confirmBtn").addEventListener("click", () => {
     let sendTo = document.querySelector('#sendTo').value;
     let amount = document.querySelector('#amount').value;
     let reason = document.querySelector('#reason').value;
     let message = document.querySelector('#message').value;
 
-    fetch('http://localhost:3000/api/v1/transfers', {
+    fetch(base_url + '/api/v1/transfers', {
         method: "post",
         headers: {
             'Content-Type': 'application/json',
