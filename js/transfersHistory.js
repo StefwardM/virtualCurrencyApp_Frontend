@@ -13,7 +13,8 @@ fetch(base_url + '/api/v1/transfer/history', {
 }).then(response => {
     return response.json();
 }).then(json => {
-    for (let i = json.data.transfers.length - 1; i >= 0 ; i--){
+    if(json.status === "success") {
+        for (let i = json.data.transfers.length - 1; i >= 0 ; i--){
             let transaction =
                 `<li class="flex flex-row justify-around transaction mb-4">
                 <p class="p--normal transaction__p">To ${json.data.transfers[i]['recipient']}</p>
@@ -21,6 +22,11 @@ fetch(base_url + '/api/v1/transfer/history', {
                 </li>`
             document.querySelector("#transfers").insertAdjacentHTML('beforeend', transaction);
         }
-}).catch(err => {
-    console.log(err);
+    }
+    else{
+        let errorDiv = document.querySelector(".error");
+        let errorText = document.querySelector(".error p");
+        errorText.innerHTML = json.message;
+        errorDiv.classList.remove('hidden');
+    }
 })
