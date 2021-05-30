@@ -20,7 +20,16 @@ document.querySelector("#confirmBtn").addEventListener("click", () => {
     }).then(response => {
         return response.json();
     }).then(json => {
-        window.location.href = "index.html";
+        console.log(json);
+        if(json.status === "success") {
+            window.location.href = "index.html";
+        }
+        else{
+            let errorDiv = document.querySelector(".error");
+            let errorText = document.querySelector(".error p");
+            errorText.innerHTML = json.message;
+            errorDiv.classList.remove('hidden');
+        }
     })
 });
 

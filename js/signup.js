@@ -21,13 +21,15 @@ document.querySelector("#signUpBtn").addEventListener("click", () => {
         return response.json();
     }).then(json => {
         if(json.status === "success") {
-            // let feedback = document.querySelector(".alert");
-            // feedback.textContent = "Sign up complete!";
-            // feedback.classList.remove('hidden');
-
             let token = json.data.token;
             localStorage.setItem("token", token);
             window.location.href = "login.html";
+        }
+        else {
+            let errorDiv = document.querySelector(".error");
+            let errorText = document.querySelector(".error p");
+            errorText.innerHTML = json.message;
+            errorDiv.classList.remove('hidden');
         }
     })
 });
