@@ -21,5 +21,9 @@
     "gulp-clean-css": "^4.3.0",
     "gulp-uglify": "^3.0.2",
     "gulp-uglyfly": "^1.4.2"
+  },
+  "dependencies": {
+    "primus": "^8.0.3",
+    "ws": "^7.4.6"
   }
 }
