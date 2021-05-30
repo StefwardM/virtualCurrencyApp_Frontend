@@ -1,8 +1,8 @@
-const Primus = require("primus");
+
 const base_url = "https://pepecoin-gannufan.herokuapp.com";
 
 
-primus = Primus.connect(base_url, {
+let primus = Primus.connect("http://localhost:3000", {
     reconnect: {
         max: Infinity,
         min: 500,

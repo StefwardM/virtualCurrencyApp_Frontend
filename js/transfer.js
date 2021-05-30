@@ -1,4 +1,9 @@
 const base_url = "https://pepecoin-gannufan.herokuapp.com";
+
+if(!localStorage.getItem("token")){
+    window.location.href = "../login.html";
+}
+
 document.querySelector("#confirmBtn").addEventListener("click", () => {
     let sendTo = document.querySelector('#sendTo').value;
     let amount = document.querySelector('#amount').value;

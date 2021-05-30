@@ -1,4 +1,4 @@
-const base_url="https://pepecoin-gannufan.herokuapp.com";fetch(base_url+"/api/v1/transfer/history",{method:"get",headers:{"Content-Type":"application/json"}}).then(a=>a.json()).then(t=>{for(let a=t.data.transfers.length-1;0<=a;a--){var e=`<li class="flex flex-row justify-around transaction mb-4">
-                <p class="p--normal transaction__p">To ${t.data.transfers[a].recipient}</p>
-                <p class="p--normal transaction__p">${t.data.transfers[a].amount} PP</p>
-                </li>`;document.querySelector("#transfers").insertAdjacentHTML("beforeend",e)}}).catch(a=>{console.log(a)});
+const base_url="https://pepecoin-gannufan.herokuapp.com";localStorage.getItem("token")||(window.location.href="../../login.html"),fetch(base_url+"/api/v1/transfer/history",{method:"get",headers:{"Content-Type":"application/json"}}).then(t=>t.json()).then(e=>{for(let t=e.data.transfers.length-1; 0<=t; t--){var a=`<li class="flex flex-row justify-around transaction mb-4">
+                <p class="p--normal transaction__p">To ${e.data.transfers[t].recipient}</p>
+                <p class="p--normal transaction__p">${e.data.transfers[t].amount} PP</p>
+                </li>`;document.querySelector("#transfers").insertAdjacentHTML("beforeend",a)}}).catch(t=>{console.log(t)});

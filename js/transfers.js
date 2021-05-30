@@ -1,5 +1,9 @@
 const base_url = "https://pepecoin-gannufan.herokuapp.com";
 
+if(!localStorage.getItem("token")){
+    window.location.href = "../login.html";
+}
+
 fetch(base_url + '/api/v1/transfers', {
     method: "get",
     headers: {
