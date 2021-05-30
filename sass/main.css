@@ -772,16 +772,6 @@ textarea {
   background-color: #7f9093;
 }
 
-.textarea {
-  border-radius: 0.5em;
-  height: 4rem;
-  vertical-align: middle;
-  margin-top: 0.5em;
-  margin-bottom: 1em;
-  border-color: transparent;
-  box-shadow: 0px 0px 1em #ccc;
-}
-
 .leaderboard {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -919,6 +909,16 @@ textarea {
 .form__input {
   border-radius: 0.5em;
   height: 2.3rem;
+  vertical-align: middle;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  border-color: transparent;
+  box-shadow: 0px 0px 1em #ccc;
+}
+
+.form__textarea {
+  border-radius: 0.5em;
+  height: 4rem;
   vertical-align: middle;
   margin-top: 0.5em;
   margin-bottom: 1em;
