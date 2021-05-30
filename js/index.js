@@ -2,13 +2,13 @@
 const base_url = "https://pepecoin-gannufan.herokuapp.com";
 
 
-let primus = Primus.connect("http://localhost:3000", {
-    reconnect: {
-        max: Infinity,
-        min: 500,
-        retries: 10
-    }
-});
+// let primus = Primus.connect("http://localhost:3000", {
+//     reconnect: {
+//         max: Infinity,
+//         min: 500,
+//         retries: 10
+//     }
+// });
 
 
 if(!localStorage.getItem("token")){
