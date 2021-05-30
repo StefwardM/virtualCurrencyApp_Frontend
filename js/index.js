@@ -1,5 +1,19 @@
 const base_url = "https://pepecoin-gannufan.herokuapp.com";
 
+
+primus = Primus.connect(base_url, {
+    reconnect: {
+        max: Infinity,
+        min: 500,
+        retries: 10
+    }
+});
+
+
+if(!localStorage.getItem("token")){
+    window.location.href = "../login.html";
+}
+
 fetch(base_url + "/api/v1/transfers", {
     'headers': {
         'Authorization': 'Bearer ' + localStorage.getItem('token')
